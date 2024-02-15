@@ -1,0 +1,752 @@
+@charset "UTF-8";
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  list-style: none;
+  margin: 0;
+}
+.menu .menu_link {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+}
+.menu .menu_item {
+  border-right: 3px dotted rgb(0, 0, 0);
+  padding-right: 30px;
+}
+.menu .menu_item:last-child {
+  border-right: none;
+}
+
+.head_logo {
+  width: 100%;
+  height: 100%;
+}
+
+.text_head {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 100;
+  padding-top: 6px;
+}
+
+.subheader {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  min-height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.subheader .subheader_logo {
+  margin-top: 15px;
+}
+.subheader .tel_text {
+  color: #FFF;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 14px;
+}
+.subheader .telophone {
+  display: block;
+  color: #FFF;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.subheader .tel_button {
+  color: #fff;
+  margin-top: 15px;
+  width: 187px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: #349aae;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+}
+.subheader .tel_button:hover {
+  -o-border-image: none;
+     border-image: none;
+  background-color: #1EACC7;
+}
+
+.hamburger {
+  display: none;
+}
+
+.firstList {
+  padding: 135px 0px 150px 0px;
+  min-height: 800px;
+  width: 100%;
+  background: url(../img/uber_bg.png) center center/cover no-repeat;
+  z-index: -1;
+}
+.firstList .first_texthead {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+.firstList .two_texthead {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 2px;
+  text-align: center;
+}
+.firstList .btn_first {
+  display: block;
+  width: 259px;
+  height: 63px;
+  background-color: #349aae;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  margin: 0 auto;
+  margin-top: 115px;
+  border-radius: 4px;
+}
+.firstList .btn_first:hover {
+  -o-border-image: none;
+     border-image: none;
+  background-color: #1EACC7;
+}
+.firstList .firsttxt {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.twoList {
+  padding-top: 20px;
+  margin-bottom: 19px;
+}
+.twoList .sunTwo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+.twoList .sunTwo .kryg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 116px;
+  min-height: 116px;
+  background-color: #1EACC7;
+  border-radius: 100%;
+}
+.twoList .sunTwo .descrp .twoList_dsc {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+.twoList .sunTwo .descrp .sunTwoText {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.twoList .descrp {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+
+.label {
+  width: 113px;
+  height: 24px;
+  background-color: black;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+.label_white {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+.sectionHeadText {
+  margin-top: 33px;
+  color: rgba(0, 0, 0, 0.7960784314);
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sectionSubHeader {
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.mobileUber {
+  background: url("../img/mobile_bg.png") center center/cover no-repeat;
+  min-height: 900px;
+  padding: 48px 0px 80px 0px;
+}
+.mobileUber_cart {
+  flex-basis: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+.mobileUber_cart .row {
+  margin-top: 32px;
+}
+.mobileUber_cart_1 {
+  background: url("../img/mobile_app1.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_2 {
+  background: url("../img/Карточка 2.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_3 {
+  background: url("../img/Карточка 3.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_4 {
+  background: url("../img/Карточка 4.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_5 {
+  background: url("../img/Карточка 5.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_6 {
+  background: url("../img/Карточка 6.png") center center/cover no-repeat;
+  width: 320px;
+  height: 280px;
+  position: relative;
+}
+.mobileUber_cart_Text {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 82px;
+}
+.mobileUber_cart_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.mobileUber_cart_plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+.mobileUber_cart_plus:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+.mobileUber_cart_plus:hover:before, .mobileUber_cart_plus:hover:after {
+  background-color: #FF5656;
+}
+
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+.subtitle_white {
+  color: #fff;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+}
+.title_white {
+  color: #fff;
+}
+
+.choice {
+  padding: 59px 0px 139px 0px;
+  min-height: 895px;
+  position: relative;
+  background: url("../img/Подложка.png") center center/cover no-repeat;
+}
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+.choice .section3UberX_HeadText {
+  color: #ffffff;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.choice .section3UberX_HeadText_sub {
+  color: #FFF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+}
+.choice .UberXImg {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 1;
+}
+.choice .descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.section3UberX .label {
+  background-color: #fff;
+  color: black;
+}
+
+.require {
+  padding: 68px 0px 84px 0px;
+}
+.require_block {
+  margin: 33px 0;
+}
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+.require_title {
+  color: #1CA8C3;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 24px;
+}
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+.require_list li {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.require_list li:before {
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  content: "";
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/Rectangle.svg") center center/cover no-repeat;
+}
+.require .warning .require_title {
+  color: #FF5656;
+}
+.require .warning .require_list li::before {
+  background: url("../icons/check_red 1.svg") center center/cover no-repeat;
+}
+.require_descr {
+  color: #27ceef;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.world {
+  position: relative;
+  padding: 49px 0;
+  background: url("../img/map.jpg") center center/cover no-repeat;
+  min-height: 717px;
+}
+.world_link {
+  position: absolute;
+  text-align: center;
+  color: #1FBAD6;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+}
+.world_link:hover {
+  color: #fff;
+}
+
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+.footer_wrapper > div {
+  width: 33%;
+}
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_raz {
+  width: 301px;
+  height: 4px;
+  background-color: #27d2f0;
+  margin: 0 auto;
+  opacity: 1;
+}
+.footer_download {
+  width: 296px;
+}
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+.footer_social_item i {
+  color: #fff;
+}
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.footer_links_main a {
+  text-decoration: none;
+  text-align: center;
+  color: #070716;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.footer_links_sub {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.footer_links_sub a {
+  text-decoration: none;
+  color: #999;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.footer_links .lang a {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #1FBAD6;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .menu .menu_link {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .menu .menu_item {
+    padding-right: 20px;
+  }
+  .firstList .first_texthead {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  .mobileUber_cart_1 {
+    width: 300px;
+  }
+  .mobileUber_cart_2 {
+    width: 300px;
+  }
+  .mobileUber_cart_3 {
+    width: 300px;
+  }
+  .mobileUber_cart_4 {
+    width: 300px;
+  }
+  .mobileUber_cart_5 {
+    width: 300px;
+  }
+  .mobileUber_cart_6 {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .head_logo {
+    width: 100%;
+  }
+  .menu .menu_link {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .menu .menu_item {
+    padding-right: 8px;
+  }
+  .text_head {
+    font-size: 12px;
+  }
+  .subheader .tel_button {
+    width: 157px;
+    height: 46px;
+  }
+  .firstList .btn_first {
+    width: 246px;
+    height: 57px;
+  }
+  .mobileUber_cart_1 {
+    width: 260px;
+  }
+  .mobileUber_cart_2 {
+    width: 260px;
+  }
+  .mobileUber_cart_3 {
+    width: 260px;
+  }
+  .mobileUber_cart_4 {
+    width: 260px;
+  }
+  .mobileUber_cart_5 {
+    width: 260px;
+  }
+  .mobileUber_cart_6 {
+    width: 260px;
+  }
+}
+@media (max-width: 768px) {
+  .choice .UberXImg {
+    margin: 56px auto 0 -120px;
+  }
+  .twoList .sunTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  .twoList .descrp {
+    margin-left: 0px;
+  }
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  .menu_active {
+    left: 0;
+  }
+  .menu .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  .menu .menu_link {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hiden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+    text-decoration: none;
+  }
+  .xs-visible:nth-child(1) {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .subheader .tel_button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  .head_logo {
+    width: 100%;
+  }
+  .twoList .sunTwo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
